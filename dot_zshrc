@@ -1,5 +1,6 @@
-# Refresh Antibody
-if [[ !(-r ~/.zsh_plugins.zsh) || ~/.zsh_antibody -nt ~/.zsh_plugins.zsh ]]; then
+# refresh antibody
+if [[ ! (-r ~/.zsh_plugins.zsh) || ~/.zsh_antibody -nt ~/.zsh_plugins.zsh ]]; then
+	echo "running antibody"
   antibody bundle < ~/.zsh_antibody > ~/.zsh_plugins.zsh
 fi
 
